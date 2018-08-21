@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <title>Muebles :: La Jirafa QUIENES SOMOS</title>
+        <style type="text/css">
+            .fondo{
+                height: 1130px;
+                width: 1850px;
+                padding: 20px;
+                position: absolute;
+                margin-top: 3px;
+                background: url(bamboo-wall-wallpaper-4565.jpg);
+                background-repeat: left top repeat-x repeat-y;
+                box-shadow: inset 0 0 5px 5px #006600; 
+            }
+            .cont {
+                height: 140px;
+                width: 1850px;
+                padding: 20px;
+                position: relative;
+                background-color: darkseagreen;
+                font-family: 'Roboto Mono';
+                box-shadow: inset 0 0 5px 5px #006600;
+            }
+            .titulo{
+                height: 100px;
+                width: 900px;
+                float: left;
+                padding: 20px;
+                position: relative;
+                font-size: 54px;
+                margin-top: -60px;
+            }
+            .logo{
+                float: left;
+                position: relative;
+                border-radius: 24px;
+                margin-left: 100px;
+                overflow: visible;
+                margin-left: 50px;
+            }
+            .imagen {
+                float: left;
+                position: relative;
+                border-radius: 24px;
+                margin-top: -80px;
+                margin-left: 950px;
+            }
+            .muestra{
+                float: left;
+                position: relative;
+                margin-top: -895px;
+                margin-left: 1215px;
+                border-radius: 24px;
+                height: 500px;
+                width: 480px;
+            }
+            .lista {
+                background-color:papayawhip;
+                height: 65px;
+                width: 1190px;
+                padding: 10px;
+                float: center;
+                position: relative;
+                box-shadow:inset 0 0 5px 5px #996666 ;
+                overflow:visible;
+                border-radius:12px 36px;
+            }
+            .mision{
+                height: 105px;
+                width: 1170px;
+                padding: 20px;
+                margin-top: 10px;
+                position: relative;
+                background-color: darkseagreen;
+                font-family: 'Roboto Mono';
+                box-shadow: inset 0 0 5px 5px #006600;    
+            }
+            .vision{
+                height: 105px;
+                width: 1170px;
+                padding: 20px;
+                margin-top: 10px;
+                position: relative;
+                background-color: darkseagreen;
+                font-family: 'Roboto Mono';
+                box-shadow: inset 0 0 5px 5px #006600;
+            }
+            .codigo{
+                height: 235px;
+                width: 1170px;
+                padding: 20px;
+                margin-top: 10px;
+                position: relative;
+                background-color: darkseagreen;
+                font-family: 'Roboto Mono';
+                box-shadow: inset 0 0 5px 5px #006600;
+            }
+            .antecedentes{
+                height: 165px;
+                width: 1170px;
+                padding: 20px;
+                margin-top: 10px;
+                position: relative;
+                background-color: darkseagreen;
+                font-family: 'Roboto Mono';
+                box-shadow: inset 0 0 5px 5px #006600;
+            }
+            .politicas{
+                height: 165px;
+                width: 1170px;
+                padding: 20px;
+                margin-top: 10px;
+                position: relative;
+                background-color: darkseagreen;
+                font-family: 'Roboto Mono';
+                box-shadow: inset 0 0 5px 5px #006600;
+            }
+            .footer{
+                height: 170px;
+                width: 1850px;
+                float: left;
+                position: relative;
+                margin-top:1180px;
+                padding: 20px;
+                background: url(fondo-madera.jpg)left top repeat-x;
+                color: lightgreen;
+                font-size: 21px;
+                margin-left: 1-0px;
+                box-shadow: inset 0 0 5px 5px #006600;
+            }
+            .info{
+                height: 150px;
+                width: 370px;
+                float: left;
+                position: relative;
+                margin-top: -230px;
+                margin-left: 800px;
+                padding: 20px;
+                color: aliceblue;
+                background-color: transparent;
+                overflow: visible;
+                font-size: 24px;
+            }
+            .info2{
+                height: 150px;
+                width: 370px;
+                float: left;
+                position: relative;
+                margin-top: -250px;
+                margin-left: 1400px;
+                padding: 20px;
+                color: aliceblue;
+                background-color: transparent;
+                overflow: visible;
+                font-size: 24px;
+            }
+            .boton_1{
+                text-decoration: none;
+                padding: 3px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: helvetica;
+                font-weight: 300;
+                font-size: 25px;
+                color: #006505;
+                background-color: #82b085;
+                border-radius: 15px;
+                border: 3px double #006505; 
+            }
+            .boton_1:hover{
+                opacity: 0.6;
+                text-decoration: none;
+            }
+            .seleccion{
+                text-decoration: none;
+                padding: 1px;
+                font-family: helvetica;
+                font-weight: 100;
+                font-size: 15px;
+                color: #006505;
+                background-color: #ccffff;
+                border-radius: 15px;
+                border: 3px double #006505;
+                margin-left: 30px;
+            }
+            .seleccion:hover{
+                opacity: 0.6;
+                text-decoration: none;
+            }
+            .desplaso{
+                position: relative;
+                float: left;
+                margin-top: -55px;
+                margin-left: 50px;
+            }
+        </style>
+        <script LANGUAGE="Javascript">
+        function abreSitio(){
+            var URL = "";
+            var web = document.form1.salas.options[document.form1.salas.selectedIndex].value;
+            window.open(URL+web,'_self', '');
+        }
+        function abreSitioComedores(){
+            var URL = "";
+            var web = document.form1.comedores.options[document.form1.comedores.selectedIndex].value;
+            window.open(URL+web,'_self', '');
+        }
+        function abreSitioRecamaras(){
+            var URL = "";
+            var web = document.form1.recamaras.options[document.form1.recamaras.selectedIndex].value;
+            window.open(URL+web,'_self', '');
+        }
+        function abreSitioComplementos(){
+            var URL = "";
+            var web = document.form1.complementos.options[document.form1.complementos.selectedIndex].value;
+            window.open(URL+web, '_self', '');
+        }
+        function abreSitioPromociones(){
+            var URL = "";
+            var web = document.form1.promociones.options[document.form1.promociones.selectedIndex].value;
+            window.open(URL+web, '_self', '');
+        }
+        </script>
+    </head>
+    <body>
+        <form name="form1" target="_blank">
+            <div class="cont">
+                <header style="text-align: center">
+                    <a href="file:///C:/Users/Edgar/Desktop/La%20jirafa/Index/La_jirafa.html?" target="_self" class="logo"><img src="La_jirafa.jpg" alt="Boton Home-Logo Jirafita" height="150px" width="380px" class="logo"></a> 
+                    <div class="titulo">
+                        <p style="color: darkgoldenrod"><span style = "text-shadow: -5px 2px 4px #006505">"La Jirafa"</span><br>
+                            <div class="desplaso">
+                            <script type="text/javascript">
+//Ancho (en pixeles)
+var sliderwidth="810px"
+//Alto
+var sliderheight="70px"
+//Velocidad 1-10
+var slidespeed=3
+//Color de fondo:
+slidebgcolor=""
+
+//Vínculos y enlaces de las imágenes
+var leftrightslide=new Array()
+var finalslide=''
+leftrightslide[0]='<a><img border="0" src="b1a0daba4180374110e713ae1df07660.png" height="70px" width="90px"></a>'
+leftrightslide[1]='<a><img border="0" src="giraffe-1732428_960_720.png" height="70px" width="90px"></a>'
+leftrightslide[2]='<a><img border="0" src="mnVBEXg.png" height="70px" width="90px"></a>'
+                                leftrightslide[3]='<a><img border="0" src="b1a0daba4180374110e713ae1df07660.png" height="70px" width="90px"></a>'
+leftrightslide[4]='<a><img border="0" src="giraffe-1732428_960_720.png" height="70px" width="90px"></a>'
+leftrightslide[5]='<a><img border="0" src="mnVBEXg.png" height="70px" width="90px"></a>'
+leftrightslide[6]='<a><img border="0" src="b1a0daba4180374110e713ae1df07660.png" height="70px" width="90px"></a>'
+leftrightslide[7]='<a><img border="0" src="giraffe-1732428_960_720.png" height="70px" width="90px"></a>'
+leftrightslide[8]='<a><img border="0" src="mnVBEXg.png" height="70px" width="90px"></a>'
+var imagegap=""
+var slideshowgap=6
+
+
+var copyspeed=slidespeed
+leftrightslide='<nobr>'+leftrightslide.join(imagegap)+'</nobr>'
+var iedom=document.all||document.getElementById
+if (iedom)
+document.write('<span id="temp" style="visibility:hidden;position:absolute;top:-100px;left:-9000px">'+leftrightslide+'</span>')
+var actualwidth=''
+var cross_slide, ns_slide
+
+function fillup(){
+if (iedom){
+cross_slide=document.getElementById? document.getElementById("test2") : document.all.test2
+cross_slide2=document.getElementById? document.getElementById("test3") : document.all.test3
+cross_slide.innerHTML=cross_slide2.innerHTML=leftrightslide
+actualwidth=document.all? cross_slide.offsetWidth : document.getElementById("temp").offsetWidth
+cross_slide2.style.left=actualwidth+slideshowgap+"px"
+}
+else if (document.layers){
+ns_slide=document.ns_slidemenu.document.ns_slidemenu2
+ns_slide2=document.ns_slidemenu.document.ns_slidemenu3
+ns_slide.document.write(leftrightslide)
+ns_slide.document.close()
+actualwidth=ns_slide.document.width
+ns_slide2.left=actualwidth+slideshowgap
+ns_slide2.document.write(leftrightslide)
+ns_slide2.document.close()
+}
+lefttime=setInterval("slideleft()",30)
+}
+window.onload=fillup
+
+function slideleft(){
+if (iedom){
+if (parseInt(cross_slide.style.left)>(actualwidth*(-1)+8))
+cross_slide.style.left=parseInt(cross_slide.style.left)-copyspeed+"px"
+else
+cross_slide.style.left=parseInt(cross_slide2.style.left)+actualwidth+slideshowgap+"px"
+
+if (parseInt(cross_slide2.style.left)>(actualwidth*(-1)+8))
+cross_slide2.style.left=parseInt(cross_slide2.style.left)-copyspeed+"px"
+else
+cross_slide2.style.left=parseInt(cross_slide.style.left)+actualwidth+slideshowgap+"px"
+
+}
+else if (document.layers){
+if (ns_slide.left>(actualwidth*(-1)+8))
+ns_slide.left-=copyspeed
+else
+ns_slide.left=ns_slide2.left+actualwidth+slideshowgap
+
+if (ns_slide2.left>(actualwidth*(-1)+8))
+ns_slide2.left-=copyspeed
+else
+ns_slide2.left=ns_slide.left+actualwidth+slideshowgap
+}
+}
+
+
+if (iedom||document.layers){
+with (document){
+document.write('<table border="0" cellspacing="0" cellpadding="0"><td>')
+if (iedom){
+write('<div style="position:relative;width:'+sliderwidth+';height:'+sliderheight+';overflow:hidden">')
+write('<div style="position:absolute;width:'+sliderwidth+';height:'+sliderheight+';background-color:'+slidebgcolor+'" onmouseover="copyspeed=0" onmouseout="copyspeed=slidespeed">')
+write('<div id="test2" style="position:absolute;left:0px;top:0px"></div>')
+write('<div id="test3" style="position:absolute;left:-1000px;top:0px"></div>')
+write('</div></div>')
+}
+else if (document.layers){
+write('<ilayer width="+sliderwidth+" height="+sliderheight+" name="ns_slidemenu" bgcolor="+slidebgcolor+">')
+write('<layer left="0" top="0" onmouseover="copyspeed=0" onmouseout="copyspeed=slidespeed" name="ns_slidemenu2"></layer>')
+write('<layer left="0" top="0" onmouseover="copyspeed=0" onmouseout="copyspeed=slidespeed" name="ns_slidemenu3"></layer>')
+write('</ilayer>')
+}
+document.write('</td></table>')
+}
+}
+</script> 
+                        </div>
+                    </div>
+                    <img src="10768_1_600x.jpg" alt="Publicidad" height="150px" width="358px" class="imagen">
+                </header>
+            </div>
+            <div class="fondo">
+                <div class="lista">
+                    <nav>
+                    <p>
+                        <select name="salas" class="seleccion" onChange="javascript:abreSitio()">
+                            <option>Salas</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Salas/Sofas%20Y%20Loveseats/Sofas%20Y%20Loveseats.html">Sof&aacute;s y Loveseats</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Salas/Escuadras/Escuadras.html">Escuadras</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Salas/Sillones/Sillones.html">Sillones</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Salas/Sofa%20Cama/Sofa%20Cama.html">Sof&aacute; Cama</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Salas/Mesas%20Laterales/Mesas%20Laterales.html">Mesas Laterales</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Salas/Mesas%20De%20Centro/Mesas%20de%20Centro.html">Mesas De Centro</option>
+                        </select>
+                        <select name="comedores" class="seleccion" onChange="javascript:abreSitioComedores()">
+                            <option>Comedores</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Comedores/set%20de%20mesas%20y%20sillas%20de%20comedor/Set%20De%20Mesas%20Y%20Sillas%20De%20Comedor.html">Set De Mesas Y Sillas De Comedor</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Comedores/Mesas%20De%20Comedor/Mesas%20De%20Comedor.html">Mesas De Comedor</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Comedores/Sillas%20Bancas%20y%20Bancos/Sillas%20Bancas%20Y%20Bancos.html">Sillas,Bancas Y Bancos</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Comedores/Bufeteros%20Y%20Consolas/Bufeteros%20Y%20Consolas.html">Bufeteros Y Consolas</option>
+                        </select>
+                        <select name="recamaras" class="seleccion" onChange="javascript:abreSitioRecamaras()">
+                            <option>Rec&aacute;maras</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Recamaras/Set%20De%20Recamaras/Set%20De%20Recamaras.html">Set De Rec&aacute;maras</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Recamaras/Bases%20Y%20Cabeceras/Bases%20Y%20Cabeceras.html">Bases Y Cabeceras</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Recamaras/Buros/Buros.html">Bur&oacute;s</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Recamaras/Comodas%20Y%20Cajoneras/C%C3%B3modas%20Y%20Cajoneras.html">C&oacute;modas Y Cajoneras</option>
+                        </select>  
+                        <select name="complementos" class="seleccion" onChange="javascript:abreSitioComplementos()">
+                            <option>Complementos</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Complementos/Libros%20y%20Armarios/Libreros%20Y%20Armarios.html">Libreros Y Armarios</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Complementos/Consolas%20Y%20Muebles%20TV/Consolas%20Y%20Muebles%20TV.html">Consolas Y Muebles TV</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Complementos/Escritorios/Escritorios.html">Escritorios</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Complementos/Cavas%20Y%20Mesas%20Bar/Cavas%20Y%20Mesas%20Bar.html">Cavas Y Mesas Bar</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Complementos/Mascotas/Mascotas.html">Mascotas</option>
+                        </select>
+                        <select name="promociones" class="seleccion" onChange="javascript:abreSitioPromociones()">
+                            <option>Promociones</option>
+                            <option value="file:///C:/Users/Edgar/Desktop/La%20jirafa/Promociones/Promociones.html">Especiales Del Mes</option>
+                        </select>
+                        </p>
+                    </nav>
+                </div>
+                <div class="mision">
+                    <h2>Misi&oacute;n</h2>
+                    <p>Brindar al cliente el mejor mobiliario y diseño de interiores, con muebles de la mejor calidad, diseño y comodidad. Apoyando con un personal capacitado garantizando innovación y entregas a tiempo.</p>
+                </div>
+                <div class="vision">
+                    <h2>Visi&oacute;n</h2>
+                    <p>Para el año 2020 ser una empresa reconocida regionalmente por la calidad e innovación en muebles a través de un equipo de trabajo capacitado, con apoyo y haciendo uso de las tecnologías.</p>
+                </div>
+                <div class="codigo">
+                    <h2>Codigo De Etica Y Valores</h2>
+                    <ul>
+                        <li>COMPROMISO <br>Cumplir con lo prometido en tiempo y en forma con respeto mutuo, haciendo las cosas correctas de la forma correcta conjuntando la visión individual con la visión organizacional para entender que el éxito de la empresa, es el éxito de su gente. </li>
+                        <li>RESPONSABILIDAD <br>Entregar en tiempo y forma lo acordado </li>
+                        <li>CALIDAD <br> Todos nuestros muebles tengas una excelente calidad y no tenga algún tipo de problema con nuestros artículos.</li>
+                        <li>CREATIVIDAD E INOVACION  <br>Dar un toque de modelos únicos a su hogar. </li>
+
+                    </ul>
+                </div>
+                <div class="antecedentes">
+                    <h2>Antecedentes</h2>
+                    <p>07 de mayo del 2010 fue fundada la mueblería “la jirafa” ubicada en Francisco Márquez No. 906 (frente a la esc. Niños héroes) col. Vicente guerrero C.P. 43630 Tulancingo, Hgo. Por su propietario el señor Alberto tenorio ortega. 
+En el año 2010 empezó rentando un pequeño local y ya un poco después gracias a las ventas pudieron adquirir el terreno y de esta forma el negocio creció.
+Dicho negocio se dedica a la venta de muebles para ello existe una empleada la cual se encarga de llevar el control de ventas y gastos realizados en el día, llevando todos estos registros en una libreta.
+Su esposa es la responsable del control del inventario basándose en todas las notas que le entrega la empleada, al igual que realiza los pedidos a los proveedores en caso de faltar algún tipo de mueble, por ello se necesita una constante comunicación.
+</p>
+                </div>
+                <div class="politicas">
+                    <h2>Politicas</h2>
+                    <p>La política de calidad de Muebles “LA JIRAFA” se basa en el compromiso con los clientes, empleados, administración y la sociedad.
+El compromiso con nuestros clientes se basa en escucharles para mejorar día a día y ofrecer un producto y un servicio adaptado a sus necesidades. Muebles “LA JIRAFA” aprende de cada opinión de nuestros clientes, ya sean futuros, presentes o pasados.
+Implantamos mejoras desde la primera vez que el cliente se pone en contacto con nosotros hasta que el producto final llega a sus oficinas, todo esto sin descuidar la post-venta y ofreciendo garantía todos los productos que salen de nuestras instalaciones. 
+El compromiso con nuestros empleados es garantizarles el bienestar tanto dentro de nuestras instalaciones como fuera de ellas con el fin de que puedan realizar un trabajo óptimo en un ambiente de trabajo adecuado en cada una de las funciones que realizan.
+</p>
+                </div>
+                <img src="GM_20180815_75701.gif" height="500px" width="480" alt="GIF-Publicidad" class="muestra">
+             </div>
+            <div class="footer" style="color: aliceblue">
+                <p>&copy; &nbsp; 2018 Muebleria "La Jirafa"</p>
+                <p style="text-transform: capitalize"> francisco marquez no. 906<br>
+                col. vicente guerrero C.P 43630 <br>
+                tulancingo, Hgo.
+                </p>
+                <p>775 178 42 42</p>
+                <nav class="info">
+                    <ul style="list-style-type: none">
+                        <li class="">
+                            <a href="file:///C:/Users/Edgar/Desktop/La%20jirafa/Quienes%20Somos/Quienes%20Somos.html" target="_self" class="boton_1">Quienes Somos?</a>
+                        </li>
+                        <br>
+                    </ul>
+                </nav>
+                <nav class="info2">
+                    <ul style="list-style-type: none">
+                        <li class="">
+                            <a href="file:///C:/Users/Edgar/Desktop/La%20jirafa/Nuestras%20Marcas/Nuestras%20Marcas.html" target="_self" class="boton_1">Nuestras Marcas</a>
+                        </li>
+                        <br>
+                        <li class="nav-path-selected">
+                            <a href="file:///C:/Users/Edgar/Desktop/La%20jirafa/Promociones/Promociones.html" target="_self" class="boton_1">Promociones</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </form>
+    </body>
+</html>
